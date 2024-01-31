@@ -3,6 +3,8 @@
 using namespace std;
 
 #define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#define f(i,s,e) for(long long int i=s;i<e;i++)
+#define rf(i,e,s) for(long long int i=e-1;i>=s;i--)
 #define MOD 1000000007
 #define MOD1 998244353
 #define INF 1e18
