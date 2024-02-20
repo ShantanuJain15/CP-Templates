@@ -1,5 +1,6 @@
-ell expo1(ell a, ell b, ell mod) {
-    ell res = 1; 
+// xll -> __int128 
+xll expo1(xll a, xll b, xll mod) {
+    xll res = 1; 
     while (b > 0) {
         if (b & 1)
             res = (res * a) % mod; 
@@ -9,8 +10,8 @@ ell expo1(ell a, ell b, ell mod) {
     return res;
 }
 
-bool check_composite(ell n, ell a, ell d, ell s) {
-    ell x = expo1(a, d, n);
+bool check_composite(xll n, xll a, xll d, xll s) {
+    xll x = expo1(a, d, n);
     if (x == 1 || x == n - 1)
         return false;
     for (int r = 1; r < s; r++) {
@@ -21,7 +22,7 @@ bool check_composite(ell n, ell a, ell d, ell s) {
     return true;
 };
 
-bool MillerRabin(ell n) { // returns true if n is prime, else returns false.
+bool MillerRabin(xll n) { // returns true if n is prime, else returns false.
     if (n < 2)
         return false;
 
