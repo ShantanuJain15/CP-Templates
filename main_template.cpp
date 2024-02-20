@@ -15,6 +15,7 @@ using namespace std;
 #define ss second
 
 typedef long long ll;
+typedef __int128 xll;
 
 ll power(ll x, ll y,ll mod) {  ll ans =1ll; while(y>0){ if(y&1)ans=(ans*x)%mod; x=(x*x)%mod;y=y>>1;} return ans;}
 ll gcd(ll a, ll b) {if (b > a) {return gcd(b, a);} if (b == 0) {return a;} return gcd(b, a % b);}
