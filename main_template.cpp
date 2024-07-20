@@ -15,7 +15,7 @@ using namespace std;
 
 typedef long long ll;
 typedef unsigned long ull;
-typedef unsigned long int  lli;
+typedef long long int  lli;
 // typedef __int128 xll;
 
 template<class T> void _print(T t){cerr<<t;}
