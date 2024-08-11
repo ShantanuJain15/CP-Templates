@@ -12,7 +12,7 @@ class DisjointSet{
     int find_par(int x){
         if(x==parent[x])return x;
 
-        return parent[x]=find_par(parent[x]);//path commersion
+        return parent[x]=find_par(parent[x]);//path compression 
     }
     void unionbysize(int u,int v){
         int a=find_par(u);
